@@ -31,7 +31,8 @@
         - Negro liso (default):  --bg-image: none;
         - Hormigón:              --bg-image: url("assets/bg-concrete.jpg");
       */
---bg-image: url("assets/bg-concrete.jpg");    }
+      --bg-image: url("assets/bg-concrete.jpg");
+    }
 
     *{ box-sizing:border-box; }
     html,body{ height:100%; }
@@ -331,6 +332,19 @@
     .footer b{ color: rgba(255,255,255,.78); font-weight: 700; }
     .footer .fine{ width:100%; color: rgba(255,255,255,.30); letter-spacing:.12em; }
 
+    .portal-link{
+      color: rgba(255,255,255,.45);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .portal-link:hover{
+      color: rgba(255,255,255,.78);
+    }
+    .footer .sep{
+      opacity:.35;
+      margin: 0 10px;
+    }
+
     @media (max-width:520px){
       :root{ --logo: 132px; --inputH: 52px; }
       .bar-mid::before, .bar-mid::after, .bar-top::after{ display:none; }
@@ -391,7 +405,13 @@
 
       <div class="footer">
         <div>FORMATOS <b>A3 — A2 — A1</b></div>
-        <div>enbrutoestudio.com.ar</div>
+
+        <div>
+          enbrutoestudio.com.ar
+          <span class="sep">·</span>
+          <a class="portal-link" href="https://portal.enbrutoestudio.com.ar">Acceso clientes</a>
+        </div>
+
         <div class="fine">SIN SPAM — BAJA CUANDO QUIERAS</div>
       </div>
     </section>
